@@ -1,6 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
+# The pair of functions bellow compute and cache the inverse of a matrix (the program fails
+# if the matrix is not inversible or if it is not a square matrix). 
+# The makeCacheMatrix transforms the matrix into a special matrix, while the cacheSolve
+# function computes and caches the actual inverse of the matrix.
+
 ## Creates a special "matrix" that is a list containing a function to set the value of the matrix
 # a function to get the value of the matrix, set the value of the inverse matrix
 # get the inverse matrix
