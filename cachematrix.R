@@ -4,7 +4,8 @@
 # The pair of functions bellow compute and cache the inverse of a matrix (the program fails
 # if the matrix is not inversible or if it is not a square matrix). 
 # The makeCacheMatrix transforms the matrix into a special matrix, while the cacheSolve
-# function computes and caches the actual inverse of the matrix.
+# function computes and caches the actual inverse of the matrix or retrieves the cached 
+# inverse when available.
 
 ## Creates a special "matrix" that is a list containing a function to set the value of the matrix
 # a function to get the value of the matrix, set the value of the inverse matrix
@@ -26,7 +27,6 @@ makeCacheMatrix <- function(x = matrix()) {
         list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 
 }
-
 
 ## Write a short comment describing this function
 # The cacheSolve function compute the inverse of the special matrix made with the 
